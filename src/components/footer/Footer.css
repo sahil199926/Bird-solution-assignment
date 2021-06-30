@@ -1,0 +1,49 @@
+.footer-container{
+    background: #0F0230;
+    height: 514px;
+    color:white
+}
+.footer-container-main{
+    display: flex;
+    text-align: right;
+    justify-content: space-evenly;
+}
+
+.footer-container-main-1{
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.footer-container-main-2 >:nth-child(2){
+    display: flex;
+    
+    justify-content: space-around;
+    
+}
+.footer-container-main-2 >:nth-child(2)>div{
+    background-image: url('../../assets//Ellipse.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    padding: 9px 1px 1px 1px;
+}
+@media (max-width:750px){
+    .footer-container-main{
+        display: unset;
+    }
+    .footer-container>:first-child>img{
+        width: 286px;
+    }
+    .footer-container-main-1 {
+        display: flex;
+        text-align: left;
+        justify-content: space-evenly;
+        width: auto;}
+    .footer-container-main-2{
+        text-align: center;
+    }
+}

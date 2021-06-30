@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './components/navbar/Navbar';
+import DIO from "./components/DIO/DIO"
+import Footer from './components/footer/Footer';
+import { useState } from 'react';
+import Launch from './components/Launch/Launch'
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 function App() {
+  const [buttonToggle,setButtonToggle]=useState('1');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar setButtonToggle={setButtonToggle}/>
+      { buttonToggle=='1'&&<DIO/>}
+      { buttonToggle=='2'&&<Launch/>}
+      <Footer/>
     </div>
   );
 }

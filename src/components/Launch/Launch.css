@@ -1,0 +1,120 @@
+.launch-container{
+    background: linear-gradient(90deg, #161654 0.55%, #0F0230 100%);
+    color: white;
+}
+
+.launch-container >:first-child{
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.launch-container>:first-child>:first-child{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.launch-container>:first-child>:first-child>:nth-child(2){
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 77px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.launch-container>:first-child>:first-child>:nth-child(3){
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    width: 236px;
+    text-align: left;
+    line-height: 18px;
+}
+
+.launch-container>:nth-child(2){
+    height: auto;
+    margin-bottom: -17px;
+    background: #0F0230;
+    padding-bottom: 42px;
+    
+}
+.launch-container>:nth-child(2)>:first-child > :first-child> button{
+    width: 172px;
+height: 59px;
+}
+.wallets{
+    background: #151555;
+    border-radius: 35px;
+    width: 55%;
+    margin: 17px auto;
+    display: flex;
+    padding: 13px;
+    justify-content: space-between;
+}
+.wallets:hover{
+    box-shadow: 0px 0px 11px #eb00ff;
+}
+.center{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.zero-margin{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.sub-head{
+    font-style: normal;
+font-weight: 800;
+font-size: 11px;
+line-height: 13px;
+
+color: #2A76AD;
+}
+.unlock-button{
+        width: 138px;
+        height: 52px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 13px;
+        
+    }
+    .active-inactive{
+        background:#14114F;
+        border-radius:100px;
+            width:42%;
+    }
+
+.unlock-button:hover{
+        box-shadow: 0px 0px 11px 2px #eb00ff;
+      }
+
+      @media (max-width:1147px){
+          .launch-container>:first-child>:nth-child(2){ 
+              display: none;
+          }
+          .launch-container>:first-child>:first-child>:nth-child(2){
+              font-size: 40px;
+          }
+          .launch-container>:first-child>:first-child>:nth-child(3){
+            font-size: 13px;
+            text-align: center;
+        }
+        .active-inactive{
+            width: auto;
+        }
+        .launch-container>:nth-child(2)>:first-child > :first-child> button {
+            width: 129px;
+            
+        }
+    .wallets{
+        display: grid;
+        justify-content: center;
+
+    }
+    .wallets>:first-child{
+        margin: auto;
+    }
+    .wallets>:nth-child(2){
+        margin: auto;
+    }
+    }
