@@ -54,6 +54,7 @@ button:hover{
     .navbar>:first-child{
         padding-left: 0px;
         margin: auto;
+        margin-bottom: 11px;
     }
     .navbar>:nth-child(2){
         margin: auto;
